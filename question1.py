@@ -1,5 +1,5 @@
 # Question 1:
-# Let Fmin and Fmin be the vectiors containing the min and max temperatures recorded in Seattle in Fahrenheit for a period of 1 week. What is the daily temperature variation (Fdelta = Fmax - Fmin) in that week?
+# Let Fmin and Fmin be the vectors containing the min and max temperatures recorded in Seattle in Fahrenheit for a period of 1 week. What is the daily temperature variation (Fdelta = Fmax - Fmin) in that week?
 
 
 import numpy as np
