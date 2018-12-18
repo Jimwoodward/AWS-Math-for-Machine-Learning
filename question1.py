@@ -46,7 +46,7 @@ fdelta = fmax_matr - fmin_matr
 # Print the answer
 print(fdelta, '\n')
 
-# 2. What if we transposed the original vector/matrix data object so that it was nx1 instead of 1xn (or so the original vector/matrix is a row vector instead of a column vector)? This is how the first question is actually set up.
+# 2. What if we transposed the original vector/matrix data object so that it was nx1 instead of 1xn (or so the vector/matrix as Python knows it is a column vector instead of a row vector)? This is how the first question is actually set up.
 
 # 2.a. Attempt with vectors
 
