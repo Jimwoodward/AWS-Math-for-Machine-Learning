@@ -1,1 +1,1 @@
-https://data.berkeley.edu/education/data-8x
+A place to play around with python and machine learning
