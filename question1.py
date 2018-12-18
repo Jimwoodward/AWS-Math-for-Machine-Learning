@@ -20,7 +20,7 @@ fmax_vec = np.array(fmax)
 print(fmin_vec)
 print(fmax_vec, '\n')
 
-# Subtract the min temps vector from the max temps vector to create the delta vec
+# Subtract the min temps vector from the max temps vector to create the delta vector
 fdelta = fmax_vec - fmin_vec
 
 # Print the answer
@@ -34,6 +34,7 @@ print(fdelta, '\n')
 
 # 1. What if we treated those 1xn vectors as 1xn matrices?
 
+# Use numpy to turn the arrays into matrices
 fmin_matr = np.matrix(fmin)
 fmax_matr = np.matrix(fmax)
 
@@ -41,6 +42,7 @@ fmax_matr = np.matrix(fmax)
 print(fmin_matr)
 print(fmax_matr, '\n')
 
+# Matrix subtraction
 fdelta = fmax_matr - fmin_matr
 
 # Print the answer
@@ -50,6 +52,7 @@ print(fdelta, '\n')
 
 # 2.a. Attempt with vectors
 
+# Use numpy to turn the arrays into vectors and then to transpose those vectors
 fmin_vec = np.transpose(np.array(fmin))
 fmax_vec = np.transpose(np.array(fmax))
 
@@ -57,6 +60,7 @@ fmax_vec = np.transpose(np.array(fmax))
 print(fmin_vec)
 print(fmax_vec,'\n')
 
+# Vector subtraction
 fdelta = fmax_vec - fmin_vec
 
 # Print the answer
@@ -64,6 +68,7 @@ print(fdelta, '\n')
 
 # 2.b. Attempt with matrices
 
+# Use numpy to turn the arrays into matrices and then to transpose those matrices
 fmin_vec = np.transpose(np.matrix(fmin))
 fmax_vec = np.transpose(np.matrix(fmax))
 
@@ -71,6 +76,7 @@ fmax_vec = np.transpose(np.matrix(fmax))
 print(fmin_vec)
 print(fmax_vec,'\n')
 
+# Matrix subtraction
 fdelta = fmax_vec - fmin_vec
 
 # Print the answer
