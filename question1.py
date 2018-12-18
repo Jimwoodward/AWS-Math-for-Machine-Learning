@@ -5,7 +5,7 @@
 import numpy as np
 
 # Create arrays of the elements of our vectors
-fmin = [49, 62, 66, 69, 61] # First question about going from theory to code is that all of my vectors will 1xn vectors. What does a transposed vector look like in code?
+fmin = [49, 62, 66, 69, 61] # First question about going from theory to code is that all of my vectors will 1xn vectors on input. What does a transposed vector look like in code? Once printed?
 fmax = [71, 75, 75, 81, 80]
 
 # Print for debug
