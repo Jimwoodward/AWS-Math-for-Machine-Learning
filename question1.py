@@ -9,19 +9,69 @@ fmin = [49, 62, 66, 69, 61] # First question about going from theory to code is 
 fmax = [71, 75, 75, 81, 80]
 
 # Print for debug
-print(fmin, "\n")
-print(fmax, "\n")
+print(fmin)
+print(fmax, '\n')
 
 # Use numpy to turn the arrays into vectors
 fmin_vec = np.array(fmin)
 fmax_vec = np.array(fmax)
 
 # Print for debug
-print(fmin_vec, "\n")
-print(fmax_vec, "\n")
+print(fmin_vec)
+print(fmax_vec, '\n')
 
 # Subtract the min temps vector from the max temps vector to create the delta vec
 fdelta = fmax_vec - fmin_vec
 
 # Print the answer
-print(fdelta)
+print(fdelta, '\n')
+
+
+################################################################################################################################################################################
+################################################################################################################################################################################
+
+# Bonus work
+
+# 1. What if we treated those 1xn vectors as 1xn matrices?
+
+fmin_matr = np.matrix(fmin)
+fmax_matr = np.matrix(fmax)
+
+# Print for debug
+print(fmin_matr)
+print(fmax_matr, '\n')
+
+fdelta = fmax_matr - fmin_matr
+
+# Print the answer
+print(fdelta, '\n')
+
+# 2. What if we transposed the original vector/matrix data object so that it was nx1 instead of 1xn (or so the original vector/matrix is a row vector instead of a column vector)? This is how the first question is actually set up.
+
+# 2.a. Attempt with vectors
+
+fmin_vec = np.transpose(np.array(fmin))
+fmax_vec = np.transpose(np.array(fmax))
+
+# Print for debug
+print(fmin_vec)
+print(fmax_vec,'\n')
+
+fdelta = fmax_vec - fmin_vec
+
+# Print the answer
+print(fdelta, '\n')
+
+# 2.b. Attempt with matrices
+
+fmin_vec = np.transpose(np.matrix(fmin))
+fmax_vec = np.transpose(np.matrix(fmax))
+
+# Print for debug
+print(fmin_vec)
+print(fmax_vec,'\n')
+
+fdelta = fmax_vec - fmin_vec
+
+# Print the answer
+print(fdelta, '\n')
