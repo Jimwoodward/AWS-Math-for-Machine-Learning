@@ -26,7 +26,8 @@ one_matr = np.transpose(np.matrix([1, 1, 1, 1, 1]))
 # Print for debug
 print(one_matr, '\n')
 
-# Create cmax. Basically what we are doing here, as far as order of operations go...
+# Create cmax
+# Basically what we are doing here, as far as order of operations go...
 # 1. Scalar multiplication of 32 by the one matrix. This is so that we have a 1x5 matrix of "32"s. We need this since all 5 elements in fmax need to have 32 subtracted from them
 # 2. Subtract our 1x5 matrix of "32"s from the fmax matrix
 # 3. Scalar multiplication of 5/9 by the resultant of fmax minus the 32 matrix
